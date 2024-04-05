@@ -17,7 +17,7 @@ TRANSCRIPTS_THRESHOLD = 100
 
 def main():
     # Ask user input for csv file path
-    csv_file_path = input(r"C:\Users\Oveido's Lab\Desktop\Shaza\cell_by_gene.csv")
+    csv_file_path = input("C:\Users\Oveido's Lab\Desktop\Shaza\cell_by_gene.csv")
 
     # The path input may contain quotes, remove them
     csv_file_path = csv_file_path.strip("\"")

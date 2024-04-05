@@ -1,0 +1,5 @@
+*/venv
+*/newenv
+
+*.h5ad
+*.hdf5
