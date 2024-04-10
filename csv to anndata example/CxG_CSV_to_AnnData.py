@@ -3,7 +3,6 @@
 import pandas as pd
 import anndata
 import scipy.sparse
-import scanpy as sc
 import numpy as np
 
 import os
@@ -116,18 +115,3 @@ if __name__ == "__main__":
     main()
     
 
-#converting the .csv from the MapMyCells into .h5ad
-def convert_csv_to_h5ad(input_file,output_file=None):
-    if output_file is None:
-        output_file = input_file + ".sparse.h5ad"
-
-    adata= sc.read_csv(input_file)
-    adata.X = scipy.sparse.csr_matrix(adata.X)
-    adata = adata.T
-    adata.write(output_file)
-
-    return adata
-
-csv_file = r"C:\Users\Oveido's Lab\Desktop\Shaza\Rebecca Demo UMAP Run\MERFISH_CellsByGenesFormatted_10xWholeMouseBrain(CCN20230722)_HierarchicalMapping_UTC_1712337660599.csv"
-
-convert_csv_to_h5ad(csv_file, output_file ="MERFISH_CellsByGenesFormatted_10xWholeMouseBrain(CCN20230722)_HierarchicalMapping_UTC_1712337660599.sparse.h5ad")

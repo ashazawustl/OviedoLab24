@@ -1,0 +1,13 @@
+anndata==0.10.6
+array_api_compat==1.6
+exceptiongroup==1.2.0
+h5py==3.10.0
+natsort==8.4.0
+packaging==24.0
+python-dateutil==2.9.0.post0
+pytz==2024.1
+scipy==1.13.0
+scanpy==1.10.1
+six==1.16.0
+tzdata==2024.1
+pandas==2.2.1

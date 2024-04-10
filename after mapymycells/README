@@ -1,0 +1,23 @@
+# Working example to create [MapMyCells](https://portal.brain-map.org/atlases-and-data/bkp/mapmycells) compatible .h5ad file
+
+## Usage example
+1. On Windows, run the `csvanndata-terminal.bat` to create a virtual Python environment and activate the venv shell. Alternatively, run these following commands:
+
+```sh
+# Create a virtual environment named venv
+python -m venv csvanndata
+
+# Activate the environment shell:
+# On Windows:
+csvanndata/Scripts/activate
+
+# On Linux/Mac
+source ./csvanndata/bin/activate
+```
+
+2. From the virtual environment shell, run the `CSV_to_annData.py` script:
+```sh
+python CSV_to_AnnData.py
+```
+
+4. The output file is a compressed `.h5ad` file in this (where the `CxG_CSV_to_AnnData.py` file is) directory. The `.h5ad` file can be directly uploaded to MERSCOPE Vizualizer for UMAPPING

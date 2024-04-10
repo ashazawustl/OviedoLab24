@@ -1,5 +1,7 @@
-*/venv
-*/newenv
+*venv
+*newenv
+*csvanndata
+
 
 *.h5ad
 *.hdf5
